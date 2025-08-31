@@ -1,0 +1,63 @@
+/* Weather box */
+#main {
+  background-image: url(./assets/normal.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  max-width: 400px;   /* ✅ fixed width */
+  height: 500px;  /* ✅ fixed height */
+  
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  margin: 20px auto;  /* center horizontally */
+}
+
+/* Input & Button */
+#main input, 
+#main button {
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#main button {
+  background:palevioletred;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#main button:hover {
+  background: #006be6c4;
+}
+
+/* Weather result */
+#result {
+  margin-top: 15px;
+}
+
+#result h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+#result p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+ @media (max-width: 500px){#main{width: 300px;}}
