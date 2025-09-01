@@ -21,13 +21,13 @@ async function weatherChecking() {
 
       // background change based on temperature
       if (realData.main.temp < 15) {
-        div.style.backgroundImage = "url('./assets/cold.jpeg')";
+        div.style.backgroundImage = "url('./assets/below-15.jpeg')";
       } else {
-        div.style.backgroundImage = "url('./assets/hot.jpeg')";
+        div.style.backgroundImage = "url('./assets/up-15.jpeg')";
       }
     } else {
       display.innerHTML = `${realData.message}`;
-      div.style.backgroundImage = "url('./assets/normal.jpeg')";
+      div.style.backgroundImage = "url('./assets/normal-2.jpeg')";
     }
 
   } catch (err) {
