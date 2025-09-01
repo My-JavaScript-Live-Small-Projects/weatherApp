@@ -14,9 +14,9 @@ async function weatherChecking() {
 
     if (realData.cod === 200) {
       display.innerHTML = `
-        <h1>${realData.name} Weather</h1>
-        <p>${realData.main.temp} °C</p>
-        <p>${realData.main.humidity} %</p>
+        <h1 style="color:black;font-size:30px;">${realData.name} Weather</h1>
+        <p style="color:black;font-size:30px;">Temperature  ${realData.main.temp} °C</p>
+        <p style="color:black;font-size:30px;"> Humidity  ${realData.main.humidity} %</p>
       `;
 
       // background change based on temperature
